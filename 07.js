@@ -27,7 +27,10 @@
 function get20sEmail(arr) {
   const find20s = (item) => item.age > 19 && item.age < 30;
   const findEmail = (item) => item.email;
-  return arr.filter(find20s).sort().map(findEmail);
+  return arr
+    .filter(find20s)
+    .sort((a, b) => a - b)
+    .map(findEmail);
 }
 
 // export를 수정하지 마세요.
