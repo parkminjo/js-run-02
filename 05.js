@@ -21,10 +21,23 @@
  */
 
 // TODO: findUserByName 함수를 작성하세요.
-function findUserByName() {}
+function findUserByName(users, name) {
+  if (users.name === name) {
+    return users.find((item) => item === name);
+  } else {
+    return null;
+  }
+}
 
 // TODO: findIndexOf 함수를 작성하세요.
-function findIndexOf() {}
+function findIndexOf(arr, value) {
+  if () {
+    let result = arr.forEach(item => item === value);
+    return findIndexOf(result);
+  } else {
+    return -1;
+  }
+}
 
 // export를 수정하지 마세요.
 export { findUserByName, findIndexOf };
